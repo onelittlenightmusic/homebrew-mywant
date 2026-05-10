@@ -5,23 +5,23 @@
 class MywantRpg < Formula
   desc "MyWant RPG plugin - CLI interface to the skills-rpg game server"
   homepage "https://github.com/onelittlenightmusic/skills-rpg"
-  version "0.1.12"
+  version "0.1.13"
   license "MIT"
 
   depends_on "mywant"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/onelittlenightmusic/skills-rpg/releases/download/v0.1.12/mywant-rpg_0.1.12_darwin_amd64.tar.gz"
-      sha256 "b410dd0245f1bdcc38aa0030046dde15571e9b70f2839d3e48d67a21c83b342a"
+      url "https://github.com/onelittlenightmusic/skills-rpg/releases/download/v0.1.13/mywant-rpg_0.1.13_darwin_amd64.tar.gz"
+      sha256 "2e1fd038212c977ca9f631e6501c4aa114ecfa238a677787f9c1e8be1c26a7fd"
 
       define_method(:install) do
         bin.install "mywant-rpg"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/onelittlenightmusic/skills-rpg/releases/download/v0.1.12/mywant-rpg_0.1.12_darwin_arm64.tar.gz"
-      sha256 "1fbedfc31cfc76ffc4b60652cb31ac448aec09c9f807a0f914a88eb40acc820b"
+      url "https://github.com/onelittlenightmusic/skills-rpg/releases/download/v0.1.13/mywant-rpg_0.1.13_darwin_arm64.tar.gz"
+      sha256 "d7699f8e90da2599688a12e8d919c6aa639dd090ce37f008f5658fb34649ba03"
 
       define_method(:install) do
         bin.install "mywant-rpg"
@@ -31,15 +31,15 @@ class MywantRpg < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/onelittlenightmusic/skills-rpg/releases/download/v0.1.12/mywant-rpg_0.1.12_linux_amd64.tar.gz"
-      sha256 "902b5248c477aa2b3798d6fa3c34d847de54b363f24042ef76824b64fd71bd0c"
+      url "https://github.com/onelittlenightmusic/skills-rpg/releases/download/v0.1.13/mywant-rpg_0.1.13_linux_amd64.tar.gz"
+      sha256 "0321a39f00337f300edb30c9e5fbc492d5e9ce07c4aa4837a1e11047acbba60f"
       define_method(:install) do
         bin.install "mywant-rpg"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/onelittlenightmusic/skills-rpg/releases/download/v0.1.12/mywant-rpg_0.1.12_linux_arm64.tar.gz"
-      sha256 "53c4e301a90f15f7b74dabdb6728cd9c18608351a2842b385a3b73bcbf362d45"
+      url "https://github.com/onelittlenightmusic/skills-rpg/releases/download/v0.1.13/mywant-rpg_0.1.13_linux_arm64.tar.gz"
+      sha256 "b4df58658ae6bfb122c1151d5ff48adbf36e2ac2dc2e97654f4c37de2426b7c6"
       define_method(:install) do
         bin.install "mywant-rpg"
       end
