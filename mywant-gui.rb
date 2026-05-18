@@ -5,23 +5,23 @@
 class MywantGui < Formula
   desc "MyWant GUI server — serves the web frontend and proxies API requests to the MyWant backend"
   homepage "https://github.com/onelittlenightmusic/mywant-gui"
-  version "0.0.16"
+  version "0.0.17"
   license "MIT"
 
   depends_on "mywant"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/onelittlenightmusic/mywant-gui/releases/download/v0.0.16/mywant-gui_0.0.16_darwin_amd64.tar.gz"
-      sha256 "bb46617e1f2c4767b14b320ed819b0003e6a0bab035f5c8d6d1dd23e89332785"
+      url "https://github.com/onelittlenightmusic/mywant-gui/releases/download/v0.0.17/mywant-gui_0.0.17_darwin_amd64.tar.gz"
+      sha256 "816ef94fc073c8cd82ff866c069b97bb8783c07e1badbc01b264bbc40c838d1f"
 
       define_method(:install) do
         bin.install "mywant-gui"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/onelittlenightmusic/mywant-gui/releases/download/v0.0.16/mywant-gui_0.0.16_darwin_arm64.tar.gz"
-      sha256 "9121274cf446b473c831dd930c7237dd928846679ffbe080cba06908a4ec487c"
+      url "https://github.com/onelittlenightmusic/mywant-gui/releases/download/v0.0.17/mywant-gui_0.0.17_darwin_arm64.tar.gz"
+      sha256 "2f892986b0ff4e763f15e1e68ae43b157434947dc813e4538df3eb672cd36ae8"
 
       define_method(:install) do
         bin.install "mywant-gui"
@@ -31,15 +31,15 @@ class MywantGui < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/onelittlenightmusic/mywant-gui/releases/download/v0.0.16/mywant-gui_0.0.16_linux_amd64.tar.gz"
-      sha256 "350976e5c4a31c2f52e6bac98874d3f71837500662c432c415cafe2e90094cbe"
+      url "https://github.com/onelittlenightmusic/mywant-gui/releases/download/v0.0.17/mywant-gui_0.0.17_linux_amd64.tar.gz"
+      sha256 "6df145f7dd4417d026cb05036e3a19cdc94040726fc31886d662f35fb6ad99a2"
       define_method(:install) do
         bin.install "mywant-gui"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/onelittlenightmusic/mywant-gui/releases/download/v0.0.16/mywant-gui_0.0.16_linux_arm64.tar.gz"
-      sha256 "5534f3d424fa36f2a9e350c94e0ae234a27bdd7c8ade81735a2901856456a6e1"
+      url "https://github.com/onelittlenightmusic/mywant-gui/releases/download/v0.0.17/mywant-gui_0.0.17_linux_arm64.tar.gz"
+      sha256 "1ea93d96c3406c2aa54a00c285c74fefc673409b4ee8fa5d4c08658dd920f354"
       define_method(:install) do
         bin.install "mywant-gui"
       end
