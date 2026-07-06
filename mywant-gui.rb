@@ -12,7 +12,7 @@ class MywantGui < Formula
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/onelittlenightmusic/mywant-gui/releases/download/v0.0.93/mywant-gui_0.0.93_darwin_amd64.tar.gz"
+      url "https://github.com/onelittlenightmusic/mywant-gui-dist/releases/download/v0.0.93/mywant-gui_0.0.93_darwin_amd64.tar.gz"
       sha256 "27864765f755d0ff5d5a02a90cf4fab9139296d9a3d45c95413cd0f284f3d917"
 
       define_method(:install) do
@@ -20,7 +20,7 @@ class MywantGui < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/onelittlenightmusic/mywant-gui/releases/download/v0.0.93/mywant-gui_0.0.93_darwin_arm64.tar.gz"
+      url "https://github.com/onelittlenightmusic/mywant-gui-dist/releases/download/v0.0.93/mywant-gui_0.0.93_darwin_arm64.tar.gz"
       sha256 "163141018b18ddb912e9deb86b116f73a916c7f076c1047ae7214972533e7128"
 
       define_method(:install) do
@@ -31,14 +31,14 @@ class MywantGui < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/onelittlenightmusic/mywant-gui/releases/download/v0.0.93/mywant-gui_0.0.93_linux_amd64.tar.gz"
+      url "https://github.com/onelittlenightmusic/mywant-gui-dist/releases/download/v0.0.93/mywant-gui_0.0.93_linux_amd64.tar.gz"
       sha256 "0cebd167dbfdc19dcffc22e5f1ab1724a9e4ecf497a82d3a42b09522d2921cf5"
       define_method(:install) do
         bin.install "mywant-gui"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/onelittlenightmusic/mywant-gui/releases/download/v0.0.93/mywant-gui_0.0.93_linux_arm64.tar.gz"
+      url "https://github.com/onelittlenightmusic/mywant-gui-dist/releases/download/v0.0.93/mywant-gui_0.0.93_linux_arm64.tar.gz"
       sha256 "553d1f5fb98c3e26a2498a63c13930507445d8a9d8b4485a9da60d15447eb2a0"
       define_method(:install) do
         bin.install "mywant-gui"
