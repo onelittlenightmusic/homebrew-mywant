@@ -5,23 +5,23 @@
 class MywantGui < Formula
   desc "MyWant GUI server — serves the web frontend and proxies API requests to the MyWant backend"
   homepage "https://github.com/onelittlenightmusic/mywant-gui"
-  version "0.3.82"
+  version "0.3.83"
   license "MIT"
 
   depends_on "mywant"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/onelittlenightmusic/mywant-gui-dist/releases/download/v0.3.82/mywant-gui_0.3.82_darwin_amd64.tar.gz"
-      sha256 "3324b816b6a7ba2d33496090d7e8c1dffef842afb64ba8223af03ef88c1a561a"
+      url "https://github.com/onelittlenightmusic/mywant-gui-dist/releases/download/v0.3.83/mywant-gui_0.3.83_darwin_amd64.tar.gz"
+      sha256 "0780169988e4c0ed0b4d5e7c18723e2d822053c91836436aaa4363f42ffb1c53"
 
       define_method(:install) do
         bin.install "mywant-gui"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/onelittlenightmusic/mywant-gui-dist/releases/download/v0.3.82/mywant-gui_0.3.82_darwin_arm64.tar.gz"
-      sha256 "595c3e627c47b0ec7865bd22523704785ed9c817bdce7d13e92f898f22a54d74"
+      url "https://github.com/onelittlenightmusic/mywant-gui-dist/releases/download/v0.3.83/mywant-gui_0.3.83_darwin_arm64.tar.gz"
+      sha256 "19be736d8ef7349a402908ea9b4546e1dc31fafb80634040acd3bf7165ae2254"
 
       define_method(:install) do
         bin.install "mywant-gui"
@@ -31,15 +31,15 @@ class MywantGui < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/onelittlenightmusic/mywant-gui-dist/releases/download/v0.3.82/mywant-gui_0.3.82_linux_amd64.tar.gz"
-      sha256 "4ecee222cb704e28b92c4d0820b7d616c0593f02771b6455bf7c5d6265d0d807"
+      url "https://github.com/onelittlenightmusic/mywant-gui-dist/releases/download/v0.3.83/mywant-gui_0.3.83_linux_amd64.tar.gz"
+      sha256 "ca87487cb9d52720d4dd38281a250cd48ecb69a69281a8eda943cbf5866f9f64"
       define_method(:install) do
         bin.install "mywant-gui"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/onelittlenightmusic/mywant-gui-dist/releases/download/v0.3.82/mywant-gui_0.3.82_linux_arm64.tar.gz"
-      sha256 "05a99564b6e6bbf677dc3da608905bc834e35c351a8c1aa3cbca56a1438f9dd6"
+      url "https://github.com/onelittlenightmusic/mywant-gui-dist/releases/download/v0.3.83/mywant-gui_0.3.83_linux_arm64.tar.gz"
+      sha256 "33e400400b9e18cdac06d96a92aa413a82fc1d6af8ae96ffc77e0f7ca583a1bf"
       define_method(:install) do
         bin.install "mywant-gui"
       end
