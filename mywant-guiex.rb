@@ -5,7 +5,7 @@
 class MywantGuiex < Formula
   desc "The MyWant canvas — board, kata, characters and the robot — as an extension of mywant-gui, and its CLI (mywant guiex)"
   homepage "https://github.com/onelittlenightmusic/mywant-gui-dist"
-  version "0.6.108"
+  version "0.6.109"
   license "MIT"
 
   depends_on "mywant"
@@ -13,8 +13,8 @@ class MywantGuiex < Formula
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/onelittlenightmusic/mywant-gui-dist/releases/download/v0.6.108/mywant-guiex_0.6.108_darwin_amd64.tar.gz"
-      sha256 "7d463e824b5a581a5d81a250112fd2a1e6f7c8c66ba6911134d288c040ea8d0a"
+      url "https://github.com/onelittlenightmusic/mywant-gui-dist/releases/download/v0.6.109/mywant-guiex_0.6.109_darwin_amd64.tar.gz"
+      sha256 "c4bcd06a6faf317d0bd2bd354f86de25f8f1a9bab15ccd3cfc3e541ad61240b6"
 
       define_method(:install) do
         bin.install "mywant-guiex"
@@ -25,8 +25,8 @@ class MywantGuiex < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/onelittlenightmusic/mywant-gui-dist/releases/download/v0.6.108/mywant-guiex_0.6.108_darwin_arm64.tar.gz"
-      sha256 "5cf18f177f5f9a3b8583cc2ee26a058af8188c3085dd68175d676bb3e16b38c7"
+      url "https://github.com/onelittlenightmusic/mywant-gui-dist/releases/download/v0.6.109/mywant-guiex_0.6.109_darwin_arm64.tar.gz"
+      sha256 "15493ae567372ba41557b5abeb84aa27225aa964797924ccc927cab2791add0a"
 
       define_method(:install) do
         bin.install "mywant-guiex"
@@ -40,8 +40,8 @@ class MywantGuiex < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/onelittlenightmusic/mywant-gui-dist/releases/download/v0.6.108/mywant-guiex_0.6.108_linux_amd64.tar.gz"
-      sha256 "8b1217e67d81cce7f5983c0a788b5b1185e18f6f034e96a8694f8384bf95887a"
+      url "https://github.com/onelittlenightmusic/mywant-gui-dist/releases/download/v0.6.109/mywant-guiex_0.6.109_linux_amd64.tar.gz"
+      sha256 "17c10f06e0f740bae157149bf738fcb40c4577fbed4e129b82ef37b9686aa736"
       define_method(:install) do
         bin.install "mywant-guiex"
         # The canvas, where mywant-gui looks for extensions under Homebrew's
@@ -51,8 +51,8 @@ class MywantGuiex < Formula
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/onelittlenightmusic/mywant-gui-dist/releases/download/v0.6.108/mywant-guiex_0.6.108_linux_arm64.tar.gz"
-      sha256 "8fd88bb3dc2546eed39be66cb4e5c3a7fc169f5312708e145309aaa972ca50e0"
+      url "https://github.com/onelittlenightmusic/mywant-gui-dist/releases/download/v0.6.109/mywant-guiex_0.6.109_linux_arm64.tar.gz"
+      sha256 "062963c8c7428f6dab0d23947d0a6a2a39dd71f11c7ba781458b1c05f833b2bb"
       define_method(:install) do
         bin.install "mywant-guiex"
         # The canvas, where mywant-gui looks for extensions under Homebrew's
