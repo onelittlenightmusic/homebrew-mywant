@@ -5,21 +5,21 @@
 class Mywant < Formula
   desc "Declarative chain programming system - express what you want via YAML, autonomous agents execute it"
   homepage "https://github.com/onelittlenightmusic/MyWant"
-  version "0.17.55"
+  version "0.17.56"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/onelittlenightmusic/MyWant/releases/download/v0.17.55/mywant_0.17.55_darwin_amd64.tar.gz"
-      sha256 "0a026806bbc68f181af03f2ce1f6e391f4b165a5fb548cd27851d3f2d310189a"
+      url "https://github.com/onelittlenightmusic/MyWant/releases/download/v0.17.56/mywant_0.17.56_darwin_amd64.tar.gz"
+      sha256 "775f5a20c04751e2de91a529096c471c3b11551abad7b7bb3dd70c104977ba9d"
 
       define_method(:install) do
         bin.install "mywant"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/onelittlenightmusic/MyWant/releases/download/v0.17.55/mywant_0.17.55_darwin_arm64.tar.gz"
-      sha256 "9511b263b24c27f467b7dac0d387221cabfc1680426126a721827d87f0e60909"
+      url "https://github.com/onelittlenightmusic/MyWant/releases/download/v0.17.56/mywant_0.17.56_darwin_arm64.tar.gz"
+      sha256 "e3673280fa9b90b8a57f8c5762e456c4a60dcd4e50e686853618e7c91c15a7a9"
 
       define_method(:install) do
         bin.install "mywant"
@@ -29,15 +29,15 @@ class Mywant < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/onelittlenightmusic/MyWant/releases/download/v0.17.55/mywant_0.17.55_linux_amd64.tar.gz"
-      sha256 "7194dd9a4f31c3c495a4b316f191c95c6799f01ae0b286437cb19d7d6fd57cff"
+      url "https://github.com/onelittlenightmusic/MyWant/releases/download/v0.17.56/mywant_0.17.56_linux_amd64.tar.gz"
+      sha256 "6e1202cd9c3d09c2e212cb9f716fa8ca101a07b14bffdc2cb61ca47e6cb777b2"
       define_method(:install) do
         bin.install "mywant"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/onelittlenightmusic/MyWant/releases/download/v0.17.55/mywant_0.17.55_linux_arm64.tar.gz"
-      sha256 "dc3cd7040f1105a143772def0f54dc1e58f1a5d0131828b24c82977a8692a06b"
+      url "https://github.com/onelittlenightmusic/MyWant/releases/download/v0.17.56/mywant_0.17.56_linux_arm64.tar.gz"
+      sha256 "9661be6fd5fda8302d6c83cfd7c665e336607e9dfeb00daf68445b7c352a09d3"
       define_method(:install) do
         bin.install "mywant"
       end
